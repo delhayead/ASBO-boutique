@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title> Ma Boutique CI </title>
+        <link rel="stylesheet"  href="style/home.css">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment-with-locales.min.js"> </script>
+        <script type="text/javascript" src="app-js/liste-article-function.js"></script>
+    </head>
+
+
+    <!-- Le corps de ma page web -->
+    <body>
+            <div id="TopImage">
+                    <!-- Titre principal de la page et bandeau bleu du dessus-->
+                    <div id="videoDiv">
+                        <video id="Video" preload="auto" playsinline="" loop="" muted="" autoplay="">
+                            <source src="style/images/video/videoBG.mp4">
+                        </video>
+        
+                    </div>
+                    <div class="videoMSG">
+                        <p id="TitrePrincipal"> Boutique CI.</p>
+                        <p id="sous-titre"> powered by ASBO</p>
+                    </div>
+        
+                </div>
+                    
+                <div class="NavBar"> 
+                        <!-- Navigation bar -->
+                            <a href="index.html"  class="active"> Home </a>
+                            <a href="Catalogue.html" > Catalogue </a>
+                            <a href="Panier.html"> Mon Panier </a>
+                            <a href="Commande.html" > Commande </a>
+            
+                            <a href="log-in.html"  class="Log-Out-Button"> Log Out  </a>
+        
+                </div>
+                <!-- Sticky navbar code -->
+                <script>
+                    window.onscroll = function() {myFunction()};
+                    
+                    var navbar = document.querySelector(".NavBar");
+                    var sticky = navbar.offsetTop;
+                    
+                    function myFunction() {
+                        if (window.pageYOffset >= sticky) {
+                        navbar.classList.add("sticky")
+                        } else {
+                        navbar.classList.remove("sticky");
+                        }
+                    }
+                </script>
+                <script type="text/php" src="app-js/login.php"> </script>
+
+        <div> 
+        <div class="HomeTxt">
+            <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce vel congue augue. Suspendisse non luctus est. Donec id ligula vel ligula tincidunt aliquet eu in magna. Maecenas consectetur turpis eget convallis euismod. Quisque cursus nibh sed ipsum aliquet iaculis. Quisque sollicitudin volutpat leo, quis sagittis eros porttitor et. Sed eget lacinia nibh. Nam malesuada molestie augue, nec dictum risus.
+
+                    Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Pellentesque ultricies purus sit amet elit semper, eu pellentesque ipsum tempor. Nam aliquam blandit elit sit amet facilisis. Pellentesque nisl nisi, volutpat at suscipit sit amet, varius ut sem. Aliquam hendrerit pretium eros, quis tincidunt nisl efficitur vel. Nunc ut mi aliquet dolor varius pellentesque. Nullam ornare, arcu non ultricies convallis, lacus ipsum varius sem, sed eleifend velit augue et enim.
+                    
+                    Quisque malesuada quam arcu, sed cursus massa feugiat eu. Cras tristique bibendum molestie. Proin a lorem interdum, aliquam nunc ut, vestibulum tortor. Proin faucibus purus in justo pretium ultricies. Etiam ut magna mi. Aliquam tempus, urna eget semper tincidunt, dolor felis lobortis ligula, a tristique ante ligula non metus. Nulla eleifend urna neque, in maximus risus interdum vel. Nam posuere scelerisque tincidunt. Donec tempus erat nibh, ut maximus mi sagittis et. Proin id faucibus turpis. Aenean fringilla orci ac condimentum congue. Donec efficitur at sem vel malesuada. Sed sed augue erat. Aliquam cursus erat convallis enim tempus, quis feugiat libero finibus.
+                    
+                    Maecenas commodo tellus sed lacus fermentum finibus. Aenean in venenatis est, a aliquet dolor. Cras non lacinia nunc. Mauris maximus justo non nulla placerat, sed interdum arcu venenatis. Fusce in dui finibus, laoreet tellus in, dapibus urna. Suspendisse potenti. Duis vel mattis lorem. Ut accumsan ultricies sem consectetur pellentesque. Cras nec congue quam, non sollicitudin est. Duis ultricies placerat ligula at gravida.
+                    
+                    Nulla convallis a arcu ac condimentum. Praesent ante nibh, lobortis et bibendum id, suscipit id neque. Maecenas consectetur tortor quis accumsan pulvinar. Maecenas pellentesque venenatis purus vel maximus. In in est non augue commodo vulputate vel accumsan purus. Duis commodo massa at dignissim efficitur. Phasellus lobortis nisl a iaculis molestie. Morbi facilisis ipsum placerat rutrum tempus. In nulla risus, rhoncus ac venenatis at, ullamcorper ut elit. Suspendisse at lacinia massa.
+                </p>
+                <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce vel congue augue. Suspendisse non luctus est. Donec id ligula vel ligula tincidunt aliquet eu in magna. Maecenas consectetur turpis eget convallis euismod. Quisque cursus nibh sed ipsum aliquet iaculis. Quisque sollicitudin volutpat leo, quis sagittis eros porttitor et. Sed eget lacinia nibh. Nam malesuada molestie augue, nec dictum risus.
+
+                        Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Pellentesque ultricies purus sit amet elit semper, eu pellentesque ipsum tempor. Nam aliquam blandit elit sit amet facilisis. Pellentesque nisl nisi, volutpat at suscipit sit amet, varius ut sem. Aliquam hendrerit pretium eros, quis tincidunt nisl efficitur vel. Nunc ut mi aliquet dolor varius pellentesque. Nullam ornare, arcu non ultricies convallis, lacus ipsum varius sem, sed eleifend velit augue et enim.
+                        
+                        Quisque malesuada quam arcu, sed cursus massa feugiat eu. Cras tristique bibendum molestie. Proin a lorem interdum, aliquam nunc ut, vestibulum tortor. Proin faucibus purus in justo pretium ultricies. Etiam ut magna mi. Aliquam tempus, urna eget semper tincidunt, dolor felis lobortis ligula, a tristique ante ligula non metus. Nulla eleifend urna neque, in maximus risus interdum vel. Nam posuere scelerisque tincidunt. Donec tempus erat nibh, ut maximus mi sagittis et. Proin id faucibus turpis. Aenean fringilla orci ac condimentum congue. Donec efficitur at sem vel malesuada. Sed sed augue erat. Aliquam cursus erat convallis enim tempus, quis feugiat libero finibus.
+                        
+                        Maecenas commodo tellus sed lacus fermentum finibus. Aenean in venenatis est, a aliquet dolor. Cras non lacinia nunc. Mauris maximus justo non nulla placerat, sed interdum arcu venenatis. Fusce in dui finibus, laoreet tellus in, dapibus urna. Suspendisse potenti. Duis vel mattis lorem. Ut accumsan ultricies sem consectetur pellentesque. Cras nec congue quam, non sollicitudin est. Duis ultricies placerat ligula at gravida.
+                        
+                        Nulla convallis a arcu ac condimentum. Praesent ante nibh, lobortis et bibendum id, suscipit id neque. Maecenas consectetur tortor quis accumsan pulvinar. Maecenas pellentesque venenatis purus vel maximus. In in est non augue commodo vulputate vel accumsan purus. Duis commodo massa at dignissim efficitur. Phasellus lobortis nisl a iaculis molestie. Morbi facilisis ipsum placerat rutrum tempus. In nulla risus, rhoncus ac venenatis at, ullamcorper ut elit. Suspendisse at lacinia massa.
+                    </p>
+                    <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce vel congue augue. Suspendisse non luctus est. Donec id ligula vel ligula tincidunt aliquet eu in magna. Maecenas consectetur turpis eget convallis euismod. Quisque cursus nibh sed ipsum aliquet iaculis. Quisque sollicitudin volutpat leo, quis sagittis eros porttitor et. Sed eget lacinia nibh. Nam malesuada molestie augue, nec dictum risus.
+
+                            Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Pellentesque ultricies purus sit amet elit semper, eu pellentesque ipsum tempor. Nam aliquam blandit elit sit amet facilisis. Pellentesque nisl nisi, volutpat at suscipit sit amet, varius ut sem. Aliquam hendrerit pretium eros, quis tincidunt nisl efficitur vel. Nunc ut mi aliquet dolor varius pellentesque. Nullam ornare, arcu non ultricies convallis, lacus ipsum varius sem, sed eleifend velit augue et enim.
+                            
+                            Quisque malesuada quam arcu, sed cursus massa feugiat eu. Cras tristique bibendum molestie. Proin a lorem interdum, aliquam nunc ut, vestibulum tortor. Proin faucibus purus in justo pretium ultricies. Etiam ut magna mi. Aliquam tempus, urna eget semper tincidunt, dolor felis lobortis ligula, a tristique ante ligula non metus. Nulla eleifend urna neque, in maximus risus interdum vel. Nam posuere scelerisque tincidunt. Donec tempus erat nibh, ut maximus mi sagittis et. Proin id faucibus turpis. Aenean fringilla orci ac condimentum congue. Donec efficitur at sem vel malesuada. Sed sed augue erat. Aliquam cursus erat convallis enim tempus, quis feugiat libero finibus.
+                            
+                            Maecenas commodo tellus sed lacus fermentum finibus. Aenean in venenatis est, a aliquet dolor. Cras non lacinia nunc. Mauris maximus justo non nulla placerat, sed interdum arcu venenatis. Fusce in dui finibus, laoreet tellus in, dapibus urna. Suspendisse potenti. Duis vel mattis lorem. Ut accumsan ultricies sem consectetur pellentesque. Cras nec congue quam, non sollicitudin est. Duis ultricies placerat ligula at gravida.
+                            
+                            Nulla convallis a arcu ac condimentum. Praesent ante nibh, lobortis et bibendum id, suscipit id neque. Maecenas consectetur tortor quis accumsan pulvinar. Maecenas pellentesque venenatis purus vel maximus. In in est non augue commodo vulputate vel accumsan purus. Duis commodo massa at dignissim efficitur. Phasellus lobortis nisl a iaculis molestie. Morbi facilisis ipsum placerat rutrum tempus. In nulla risus, rhoncus ac venenatis at, ullamcorper ut elit. Suspendisse at lacinia massa.
+                        </p>
+                        <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce vel congue augue. Suspendisse non luctus est. Donec id ligula vel ligula tincidunt aliquet eu in magna. Maecenas consectetur turpis eget convallis euismod. Quisque cursus nibh sed ipsum aliquet iaculis. Quisque sollicitudin volutpat leo, quis sagittis eros porttitor et. Sed eget lacinia nibh. Nam malesuada molestie augue, nec dictum risus.
+
+                                Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Pellentesque ultricies purus sit amet elit semper, eu pellentesque ipsum tempor. Nam aliquam blandit elit sit amet facilisis. Pellentesque nisl nisi, volutpat at suscipit sit amet, varius ut sem. Aliquam hendrerit pretium eros, quis tincidunt nisl efficitur vel. Nunc ut mi aliquet dolor varius pellentesque. Nullam ornare, arcu non ultricies convallis, lacus ipsum varius sem, sed eleifend velit augue et enim.
+                                
+                                Quisque malesuada quam arcu, sed cursus massa feugiat eu. Cras tristique bibendum molestie. Proin a lorem interdum, aliquam nunc ut, vestibulum tortor. Proin faucibus purus in justo pretium ultricies. Etiam ut magna mi. Aliquam tempus, urna eget semper tincidunt, dolor felis lobortis ligula, a tristique ante ligula non metus. Nulla eleifend urna neque, in maximus risus interdum vel. Nam posuere scelerisque tincidunt. Donec tempus erat nibh, ut maximus mi sagittis et. Proin id faucibus turpis. Aenean fringilla orci ac condimentum congue. Donec efficitur at sem vel malesuada. Sed sed augue erat. Aliquam cursus erat convallis enim tempus, quis feugiat libero finibus.
+                                
+                                Maecenas commodo tellus sed lacus fermentum finibus. Aenean in venenatis est, a aliquet dolor. Cras non lacinia nunc. Mauris maximus justo non nulla placerat, sed interdum arcu venenatis. Fusce in dui finibus, laoreet tellus in, dapibus urna. Suspendisse potenti. Duis vel mattis lorem. Ut accumsan ultricies sem consectetur pellentesque. Cras nec congue quam, non sollicitudin est. Duis ultricies placerat ligula at gravida.
+                                
+                                Nulla convallis a arcu ac condimentum. Praesent ante nibh, lobortis et bibendum id, suscipit id neque. Maecenas consectetur tortor quis accumsan pulvinar. Maecenas pellentesque venenatis purus vel maximus. In in est non augue commodo vulputate vel accumsan purus. Duis commodo massa at dignissim efficitur. Phasellus lobortis nisl a iaculis molestie. Morbi facilisis ipsum placerat rutrum tempus. In nulla risus, rhoncus ac venenatis at, ullamcorper ut elit. Suspendisse at lacinia massa.
+                            </p>
+        </div>
+    </body>
+
+</html>

@@ -1,0 +1,322 @@
+/* IMPORTATION DES POLICE D'ECRITURE */
+@font-face {
+    font-family: BEBASNEUE;
+    src: url(fonts/BEBASNEUE-REGULAR.TTF);
+  }
+
+@font-face{
+    font-family: Vermine;
+    src: url(fonts/VV2Nightclub.otf)
+}
+
+@font-face{
+    font-family: BowHouse;
+    src: url(fonts/Bowhouse-Light.otf)
+}
+@font-face{
+    font-family: Micro;
+    src: url(fonts/MicroFLF.ttf)
+}
+@font-face{
+    font-family: Micro-B;
+    src: url(fonts/MicroFLF-Bold.ttf)
+}
+/*=================*/
+h1,h2,p{
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    color:white;
+}
+
+p{
+    font-family: Micro;
+    font-size: 20px;
+    padding:50px;
+    text-align: left;
+}
+
+
+
+/* NavBAr 2.0*/
+
+.NavBar{
+    overflow: hidden;
+    background-color:   rgb(36, 36, 39);
+}
+
+.NavBar a{
+    float:left;
+    display:block;
+    color: white;
+    text-align: center;
+    padding: 12px 16px;
+    font-family: Micro;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+.NavBar a:hover{
+    background-color: white;
+    color:black;
+}
+
+.NavBar a.active{
+    background-color: rgb(198, 206, 207);
+
+}
+
+.NavBar a.Log-Out-Button{
+    float:right;
+}
+
+.sticky{
+    position: fixed;
+    top:0;
+    width:100%;
+    z-index: 10;
+}
+.Titre h2{
+    font-family: Vermine;
+    font-size: 55px;
+}
+.Titre p{
+    text-align: left;
+    padding: 10px 20px;
+    font-family: Micro;
+    font-size: 20px;
+}
+.Titre p::first-letter{
+    font-size: 50px;
+}
+
+#videoDiv{
+    min-height:100%;
+    height: 300px;
+    width: 100%;
+    padding:0;
+    margin: 0;
+    background-color: gray;
+    position: relative;
+}
+#Video{
+    widows: 100vw;
+    height: auto;
+    margin: auto;
+    display: block;
+}
+
+@media (min-aspect-ration: 16/9){
+    #Video{
+        width: 100vw;
+        height: auto;
+    }
+}
+@media (max-aspect-ratio: 16/9) {
+    #Video {
+      height: 100vh; 
+      width:auto;
+      margin-left: 50vw;
+      transform: translate(-50%);
+    }
+  }
+.videoMSG
+  {
+    width: 100%; 
+    height: 100%;
+    position: absolute; 
+    top: 0; 
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+/*:::::::::::::::::::::::::::::::::::::::*/
+body,html{
+    height: 100%;
+    margin:0;
+}
+
+body{
+    background-color: #002d47;
+}
+
+#TitrePrincipal{
+    font-family: Micro-B;
+    font-size: 100px;
+    color: #221a47;
+    line-height:120px;
+
+}
+#sous-titre{
+    position: absolute;
+    font-family: Micro-B;
+    font-size:40px;
+    color: #221a47;
+    line-height:120px;
+    margin-top: 250px
+
+}
+
+#TopImage{
+    /*height: 400px;*/
+    position: relative;
+    overflow: hidden;
+    /* background: linear-gradient(90deg,#100d33 -20%,#221799,#100d33 120%);*/
+    background-color:rgb(212, 217, 221);
+    background-size: 100% 100%; 
+
+    /*box-shadow: inset 0px 0px 80px 0px ;*/
+
+}
+#usernameForm{
+    position: relative;
+    text-align: right;
+    margin-top: -3.7cm;
+    margin-right: 1cm;
+}
+
+
+
+
+.logoBoutique{
+    size: 10% 60%;
+    width:150px;
+    height: 110%;
+    margin-left: 0%;
+}
+
+
+
+#Articles-whishlist-resume{
+    color:#ffffff;
+    font-weight: bold ;
+    width: 70%;
+    margin: 0 auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    background-color: rgb(87, 155, 219);
+    font-size: 1cm;
+}
+
+#ButtonCommandeDiv{
+    text-align: center;
+}
+
+.newArticles#nameArticle{
+    text-align: center;
+}
+
+.articleDiv{
+    width : 450px;
+    margin: 0 auto;
+    
+}
+
+
+#addArticleButton{
+    background-color: rgb(87, 155, 219);
+    background: rgb(87, 155, 219);
+    color: white;
+    border-radius: 3px;
+    padding: 10px 10px;
+    text-align: center;
+    font-size: 0.5cm;
+    border: none;
+    border: 2px solid rgb(87, 155, 219);
+
+}
+
+#addArticleButton{
+    transition-duration: 0.4s;
+}
+#addArticleButton:hover{
+    background-color: white;
+    background: white;
+    color: black;
+    border-radius: 3px;
+    padding: 10px 10px;
+    text-align: center;
+    font-size: 0.5cm;
+    border: 2px solid rgb(87, 155, 219);
+}
+
+
+#addArticleButtonDiv{
+    text-align: center;
+}
+
+#MesArticles-whishlist{
+    border :none
+}
+
+.articleDeleteButton{
+    background: rgb(87, 155, 219);
+    color: white;
+    border-radius: 3px;
+    padding: 5px 5px;
+    text-align: center;
+    border: none;
+    border: 2px solid rgb(87, 155, 219);
+    transition-duration: 0.4s;
+    right:0;
+    position: relative;
+    float:right;
+    margin-top:10px;
+    margin-right: 25px;
+
+
+}
+
+.articleDeleteButton:hover{
+    background-color: white;
+    background: white;
+    color: black;
+    border-radius: 3px;
+    padding: 5px 5px;
+    text-align: center;
+    border: 2px solid rgb(87, 155, 219);
+    
+}
+
+
+.WhishListElement{
+    display: inline-block;
+    align-items: flex-start;
+    position: relative;
+    text-align: left;
+    margin-left: 25px;
+    color:black;
+    
+}
+
+.articleSpaceBetween{
+    width:20px;
+    display:inline-block
+}
+
+.bottomArticleButton{
+    background: rgb(87, 155, 219);
+    color: white;
+    border-radius: 3px;
+    padding: 5px 5px;
+    text-align: center;
+    border: none;
+    border: 2px solid rgb(87, 155, 219);
+    transition-duration: 0.4s;
+    
+}
+.bottomArticleButton:hover{
+    background-color: white;
+    background: white;
+    color: black;
+    border-radius: 3px;
+    padding: 5px 5px;
+    text-align: center;
+    border: 2px solid rgb(87, 155, 219);
+}
+
+
+/* Texte en blanc */
+

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html> 
+    <head>
+        <meta charset="utf-8">
+        <title> Ma Boutique Log-in </title>
+        <link rel="stylesheet" href="style/catalogue.css">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment-with-locales.min.js"> </script>
+
+        <script src="app-js/catalogue-fct.js" charset="UTF-8"> </script>
+
+    </head>
+
+
+
+
+    <body>
+        
+        <div id="TopImage">
+            <!-- Titre principal de la page et bandeau bleu du dessus-->
+            <div id="videoDiv">
+                <video id="Video" preload="auto" playsinline="" loop="" muted="" autoplay="">
+                    <source src="style/images/video/videoBG.mp4">
+                </video>
+
+            </div>
+            <div class="videoMSG">
+                <p id="TitrePrincipal"> Catalogue.</p>
+            </div>
+
+        </div>
+            
+        <div class="NavBar"> 
+                <!-- Navigation bar -->
+                    <a href="index.html"  > Home </a>
+                    <a href="Catalogue.html" class="active"> Catalogue </a>
+                    <a href="Panier.html"> Mon Panier </a>
+                    <a href="Commande.html"> Commande </a>
+    
+                    <a href="sign-up.html"  class="Log-Out-Button"> Log Out  </a>
+
+        </div>
+        <!-- Sticky navbar code -->
+        <script>
+            window.onscroll = function() {myFunction()};
+            
+            var navbar = document.querySelector(".NavBar");
+            var sticky = navbar.offsetTop;
+            
+            function myFunction() {
+                if (window.pageYOffset >= sticky) {
+                navbar.classList.add("sticky")
+                } else {
+                navbar.classList.remove("sticky");
+                }
+            }
+        </script>
+        <div class="Titre">
+            <p> La boutique de l'Ordre Académique de Sainte Barbe possède un large éventail d'insignes qui orneront à merveille
+                votre calotte, votre penne ou n'importe lequel de vos couvre-chef/tenue. <br>
+                Chaque insignes possède une ou plusieurs signification officielle en fonction de la façon dont il est positionné
+                et des éléments additionnels qu'on lui apporte mais un insigne peut tout à fait bien avoir un sens différent
+                que vous lui attribuez. <br>
+                Découvrez ci-dessous le catalogue d'insigne proposé par la boutique ASBO et faites vous déjà une idée du prochain insigne
+                que vous souhaiterez offrir !
+            </p>
+
+        </div>
+        <div class="mosaic"> 
+
+        </div>
+            
+        <script src="app-js/catalogue.js" charset="UTF-8"> </script>
+    </body>
+
+
+
+
+
+</html>

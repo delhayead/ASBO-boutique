@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title> Ma Boutique CI </title>
+
+        <link rel="stylesheet"  href="style/commande.css">
+
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment-with-locales.min.js"> </script>
+
+        <script type="text/javascript" src="app-js/liste-article-function.js"></script>
+
+
+
+    </head>
+
+
+    <!-- Le corps de ma page web -->
+    <body>
+
+            <div id="TopImage">
+                    <!-- Titre principal de la page et bandeau bleu du dessus-->
+                    <div id="videoDiv">
+                        <video id="Video" preload="auto" playsinline="" loop="" muted="" autoplay="">
+                            <source src="style/images/video/videoBG.mp4">
+                        </video>
+        
+                    </div>
+                    <div class="videoMSG">
+                        <p id="TitrePrincipal"> Ma Commande.</p>
+                    </div>
+        
+                </div>
+                    
+                <div class="NavBar"> 
+                        <!-- Navigation bar -->
+                            <a href="index.html"  > Home </a>
+                            <a href="Catalogue.html" > Catalogue </a>
+                            <a href="Panier.html"> Mon Panier </a>
+                            <a href="Commande.html" class="active"> Commande </a>
+            
+                            <a href="log-in.html"  class="Log-Out-Button"> Log Out  </a>
+        
+                </div>
+                <!-- Sticky navbar code -->
+                <script>
+                    window.onscroll = function() {myFunction()};
+                    
+                    var navbar = document.querySelector(".NavBar");
+                    var sticky = navbar.offsetTop;
+                    
+                    function myFunction() {
+                        if (window.pageYOffset >= sticky) {
+                        navbar.classList.add("sticky")
+                        } else {
+                        navbar.classList.remove("sticky");
+                        }
+                    }
+                </script>
+
+        <div> 
+            <h2> Votre boutique personnelle pour la commande et l'achat d'insignes</h2>
+        </div>
+        
+        
+        <!-- Formulaire pour l'achat d'insigne -->
+        <div class="newArticles"> 
+            <div id="nameArticle" class="newArticles">
+
+                <form>  
+                    <label for="whishlistInput" style="color:white"> Nom de l'Insigne:</label>
+                    <!--<input type="text" id="whishlistInput" placeholder="Etoile dorée">-->
+                    <select id="whishlistInput">
+                            <option> Aucun </option>
+                        </select> 
+                    <label for="priceInput" style="color:white"> Prix:</label>
+                    <input type="number" id="priceInput" placeholder="1.3" step="0.01" readonly>
+
+                    <label for="quantityInput" style="color:white"> Quantite:</label>
+                    <input type="number" id="quantityInput" placeholder="2" step="1" value="1" min=1> 
+
+
+                      
+                </form>
+                
+            </div>
+            &nbsp
+            <div id="addArticleButtonDiv"> 
+                <button id="addArticleButton"> Ajouter l'Article </button>
+            </div>
+
+
+            <div class="newArticles" id="nameValue"> 
+                <div></div>
+            </div>
+
+        </div>
+        <h2 class="Div-title"> Votre liste d'Article </h2>
+        <div id="MesArticles-whishlist">   
+
+        </div>
+
+        <div id="MonRecapArticle">
+        </div>
+
+        <div id="ButtonCommandeDiv"> 
+            <button class="bottomArticleButton" id="confirmerButton"> Confirmer la commande </button>
+
+            <button class="bottomArticleButton" id="SupprimerCommandeButton"> Retirer un article </button>
+        </div>    
+
+        <script src="app-js/liste-article.js" charset="UTF-8"> </script>
+    </div>
+    </body>
+
+</html>

@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html> 
+    <head>
+        <meta charset="utf-8">
+        <title> Mes Articles</title>
+        <link rel="stylesheet" href="style/panier.css">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment-with-locales.min.js"> </script>
+        <script src="app-js/liste-article-function.js"></script>
+    </head>
+
+
+
+
+    <body>
+
+            <div id="TopImage">
+                    <!-- Titre principal de la page et bandeau bleu du dessus-->
+                    <div id="videoDiv">
+                        <video id="Video" preload="auto" playsinline="" loop="" muted="" autoplay="">
+                            <source src="style/images/video/videoBG.mp4">
+                        </video>
+        
+                    </div>
+                    <div class="videoMSG">
+                        <p id="TitrePrincipal"> Mes Articles.</p>
+                    </div>
+        
+                </div>
+                    
+                <div class="NavBar"> 
+                        <!-- Navigation bar -->
+                            <a href="index.html"  > Home </a>
+                            <a href="Catalogue.html" > Catalogue </a>
+                            <a href="Panier.html" class="active"> Mon Panier </a>
+                            <a href="Commande.html" > Commande </a>
+            
+                            <a href="log-in.html"  class="Log-Out-Button"> Log Out  </a>
+        
+                </div>
+                <!-- Sticky navbar code -->
+                <script>
+                    window.onscroll = function() {myFunction()};
+                    
+                    var navbar = document.querySelector(".NavBar");
+                    var sticky = navbar.offsetTop;
+                    
+                    function myFunction() {
+                        if (window.pageYOffset >= sticky) {
+                        navbar.classList.add("sticky")
+                        } else {
+                        navbar.classList.remove("sticky");
+                        }
+                    }
+                </script>
+
+         
+            <div class="AllCommands"> 
+                <!-- 
+            <div>
+                
+                <h2 class="commande"> Commande effecutée le  </h2>
+            </div>
+            <div class="wrapper">
+
+                <div class="article">
+                    <div class="imDiv">
+                        <img src="style/images/catalogue/item2.jpg"  class="imgArticle">
+                    </div>
+                    <div class="separator"></div>
+                    <div class="txt-container"> 
+                        <p id="nom">Nom de l'article </p> 
+                        <p id="quantite">Quantite : 5</p> 
+      
+                    </div>
+
+                </div>
+                <div class="article">
+                    <div class="imDiv">
+                        <img src="style/images/catalogue/item2.jpg"  class="imgArticle">
+                    </div>
+                    <div class="separator"></div>
+                    <div class="txt-container"> 
+                        <p id="nom">Nom de l'article </p> 
+                        <p id="quantite">Quantite : 5</p> 
+      
+                    </div>
+
+                </div>
+                <div class="article">
+                    <div class="imDiv">
+                        <img src="style/images/catalogue/item2.jpg"  class="imgArticle">
+                    </div>
+                    <div class="separator"></div>
+                    <div class="txt-container"> 
+                        <p id="nom">Nom de l'article </p> 
+                        <p id="quantite">Quantite : 5</p> 
+      
+                    </div>
+
+                </div>
+            </div>
+            -->
+
+
+
+            
+
+            
+            
+
+        </div>
+        <script src="app-js/panier.js"> </script>
+
+    </body>
+
+
+
+
+
+</html>
